@@ -9,15 +9,7 @@ import android.view.ViewGroup
 
 import com.example.fauziw97.ponapp.R
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- *
- */
 class ScheduleFragment : Fragment() {
 
     override fun onCreateView(
@@ -28,10 +20,6 @@ class ScheduleFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_schedule, container, false)
     }
 
-    companion object {
-        val TAG = ScheduleFragment::class.java.simpleName
-        fun newInstance() = ScheduleFragment()
-    }
 
 
 }

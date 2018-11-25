@@ -10,6 +10,7 @@ import android.support.constraint.ConstraintLayout
 import android.support.constraint.ConstraintSet
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentActivity
+import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentTransaction
 import android.support.v4.view.ViewCompat
 import android.support.v7.app.AppCompatActivity
@@ -32,25 +33,36 @@ fun View.hide() {
     visibility = View.GONE
 }
 
+fun View.gone() {
+    visibility = View.INVISIBLE
+}
+
 fun View.show() {
     visibility = View.VISIBLE
 }
 
 
-inline fun AppCompatActivity.loadFragment(
-    isAddToBackStack: Boolean = false,
-    transitionPairs: Map<String, View> = mapOf(),
-    transaction: FragmentTransaction.() -> Unit
-) {
-    val beginTransaction = supportFragmentManager.beginTransaction()
-    beginTransaction.transaction()
-    for ((name, view) in transitionPairs) {
-        ViewCompat.setTransitionName(view, name)
-        beginTransaction.addSharedElement(view, name)
-    }
+inline fun FragmentManager.inTransaction(func: FragmentTransaction.() -> Unit) {
+    val fragmentTransaction = beginTransaction()
+    fragmentTransaction.func()
+    fragmentTransaction.addToBackStack(null)
+    fragmentTransaction.commit()
+}
 
-    if (isAddToBackStack) beginTransaction.addToBackStack(null)
-    beginTransaction.commit()
+fun Fragment.addFragment(fragment: Fragment, frameId: Int) {
+    fragmentManager!!.inTransaction { add(frameId, fragment) }
+}
+
+fun Fragment.replaceFragment(fragment: Fragment, frameId: Int) {
+    fragmentManager!!.inTransaction { replace(frameId, fragment) }
+}
+
+fun AppCompatActivity.addFragment(fragment: Fragment, frameId: Int) {
+    supportFragmentManager.inTransaction { add(frameId, fragment) }
+}
+
+fun AppCompatActivity.replaceFragment(fragment: Fragment, frameId: Int) {
+    supportFragmentManager.inTransaction { replace(frameId, fragment) }
 }
 
 fun Activity.isPortrait() = requestedOrientation == ActivityInfo.SCREEN_ORIENTATION_PORTRAIT

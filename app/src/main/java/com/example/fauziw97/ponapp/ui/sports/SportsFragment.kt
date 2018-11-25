@@ -23,7 +23,6 @@ class SportsFragment : Fragment() {
         ViewModelProviders.of(activity!!)[SportsViewModel::class.java]
     }
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -51,12 +50,4 @@ class SportsFragment : Fragment() {
             }
         })
     }
-
-
-    companion object {
-        val TAG = SportsFragment::class.java.simpleName
-        fun newInstance() = SportsFragment()
-    }
-
-
 }

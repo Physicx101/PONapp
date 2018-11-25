@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:padding="@dimen/spacing_large"
+    android:foreground="?selectableItemBackground"
+    android:clickable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:padding="@dimen/spacing_xmedium"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/newsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            tools:text="Google's Fuchsia OS project adds support for Kirin 970 - GSMArena.com"
+            android:ellipsize="end"
+            android:textSize="16sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/grey_80"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/newsDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_medium"
+            tools:text="02 Mar 2016"
+            android:textSize="13sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/grey_40" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/spacing_middle"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/newsImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/round_outline"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/img_placeholder" />
+
+
+
+
+</LinearLayout>

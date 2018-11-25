@@ -48,11 +48,4 @@ class MedalsFragment : Fragment() {
         })
     }
 
-
-    companion object {
-        val TAG = MedalsFragment::class.java.simpleName
-        fun newInstance() = MedalsFragment()
-    }
-
-
 }

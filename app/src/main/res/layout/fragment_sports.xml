@@ -16,6 +16,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
+
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvSports"
         android:layout_width="0dp"

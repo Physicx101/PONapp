@@ -16,7 +16,7 @@ public abstract class FirebaseDatabaseRepo<Model> {
     protected abstract String getRootNode();
     protected abstract String getOrderBy();
 
-    private FirebaseDatabaseRepo(FirebaseMapper mapper) {
+    FirebaseDatabaseRepo(FirebaseMapper mapper) {
         databaseReference = FirebaseDatabase.getInstance().getReference(getRootNode()).orderByChild(getOrderBy());
         this.mapper = mapper;
     }
