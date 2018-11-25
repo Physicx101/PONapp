@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/medalList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:paddingTop="16dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/rubik_medium"
+        android:gravity="center"
+        android:text="9" />
+
+
+
+    <TextView
+        android:id="@+id/contingent"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:textSize="13sp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Kep. Bangka Belitung" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/goldCount"
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/rubik_medium"
+        android:text="120"
+        android:gravity="center"
+        android:layout_marginEnd="24dp"
+        android:textColor="@color/gold"
+        android:textSize="12sp" />
+
+
+
+    <TextView
+        android:id="@+id/silverCount"
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/rubik_medium"
+        android:text="157"
+        android:gravity="center"
+        android:layout_marginEnd="24dp"
+        android:textColor="@color/silver"
+        android:textSize="12sp" />
+
+
+
+    <TextView
+        android:id="@+id/bronzeCount"
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/rubik_medium"
+        android:text="157"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:textColor="@color/bronze"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/rubik_medium"
+        android:gravity="center"
+        android:text="531"
+        android:textSize="12sp" />
+
+</LinearLayout>
+
+
+
+
+

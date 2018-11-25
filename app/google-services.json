@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "500815763067",
+    "firebase_url": "https://ponapp-f58f2.firebaseio.com",
+    "project_id": "ponapp-f58f2",
+    "storage_bucket": "ponapp-f58f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500815763067:android:960fc3c078c9ddb4",
+        "android_client_info": {
+          "package_name": "com.example.fauziw97.ponapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500815763067-0fmuuae8khnlao7sg9amb421c4dhg3v4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fauziw97.ponapp",
+            "certificate_hash": "1cca6cada9d1ac7ad8d464c8681f8628a7e41d3a"
+          }
+        },
+        {
+          "client_id": "500815763067-ich6uksj839ov9p1j2iopjf3od4ok14e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBegWLE2OUppuJaxItrOtrDdTjeuAvxu-0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500815763067-ich6uksj839ov9p1j2iopjf3od4ok14e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
